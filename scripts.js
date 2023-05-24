@@ -1,7 +1,7 @@
 'use strict';
 
 const tests = [];
-let counter = 0;
+// let counter = 0;
 
 // Function to generate test items
 function generateTestItems() {
