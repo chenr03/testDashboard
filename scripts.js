@@ -26,7 +26,7 @@ function generateTestItems() {
         scriptButton.textContent = 'View Script';
         scriptButton.classList.add('script-button');
         scriptButton.addEventListener('click', () => {
-            alert(test.script); // Replace with your desired way of displaying the script
+            alert(test.script); //  Displaying the script
         });
 
         testItem.appendChild(scriptButton);
@@ -93,8 +93,7 @@ function generateTestItems() {
 
         // Restore the original background color on dragend
         testItem.addEventListener('dragend', (event) => {
-            const originalBackgroundColor = event.dataTransfer.getData('text/background');
-            testItem.style.backgroundColor = originalBackgroundColor;
+            testItem.style.backgroundColor = event.dataTransfer.getData('text/background');
         });
 
         testList.appendChild(testItem);
